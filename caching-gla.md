@@ -84,7 +84,7 @@ pip install redis django-redis
 ### **Checkpoint Questions:**
 - Can you connect to Redis?
 - Are the new packages installed?
-- What port is Redis running on?
+- What port is Redis running on?   
 
 ---
 
