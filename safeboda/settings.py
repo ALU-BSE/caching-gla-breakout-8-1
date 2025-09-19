@@ -133,3 +133,17 @@ AUTH_USER_MODEL = 'users.User'
 # REST_FRAMEWORK = {
 #     'DEFAULT_AUTHENTICATION_CLASSES': []
 # }
+# Redis Cache Configuration
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache', 
+        'LOCATION': 'redis://127.0.0.1:6379/1',    
+        'TIMEOUT': 300,                               # 5 minutes default timeout
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',  # Redis client
+        }
+    }
+}
+
+CACHE_TTL = 300  # 5 minutes in seconds
+
